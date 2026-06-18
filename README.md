@@ -68,8 +68,9 @@ All solutions are organized day-wise according to the practice schedule followed
 
 ### Day 8 – Trees
 
-* Introduction to Trees
+* Binary Trees
 * Basic Tree Operations
+* Binary Search Trees 
 
 ---
 
