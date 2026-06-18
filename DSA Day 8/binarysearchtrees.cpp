@@ -117,7 +117,7 @@ void levelOrderTraversal(Node* root){
 }
 
 int main(){
-
+    // 100 50 150 40 60 120 180 -1
     Node* root = NULL; 
     root = createBST(root); 
 
