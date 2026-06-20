@@ -116,6 +116,29 @@ void levelOrderTraversal(Node* root){
     }
 }
 
+int getMin(Node* root){
+    if(root == NULL){
+        return -1; 
+    }
+    // hum ekk asii node dhund rhe h jiske left m khuch nii h 
+    // and we are only traversing leftwards 
+    while(root->left != NULL){
+        root = root->left; 
+    }
+    // now, I am at the leftmost side
+    return root->data; 
+}
+
+int getMax(Node* root){
+    if(root==NULL){
+        return -1; 
+    }
+    while(root->right !=NULL){
+        root = root->right; 
+    }
+    return root->data; 
+}
+
 int main(){
     // 100 50 150 40 60 120 180 -1
     Node* root = NULL; 
@@ -133,6 +156,12 @@ int main(){
 
     cout << endl << "Printing Levelorder: "; 
     levelOrderTraversal(root); 
+
+    cout << endl << "Printing Min Values: "; 
+    cout << getMin(root); 
+
+    cout << endl << "Printing Max Values: "; 
+    cout << getMax(root) << endl; 
 
     return 0; 
 }
